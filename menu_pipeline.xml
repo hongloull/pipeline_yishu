@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" ?>
+<menu name="Pipeline">
+    <node type="subMenu" name="Assembly">
+    	<node type="command" name="Publish Assembly Asset" comment="Publish Assembly Asset" cmd="import mayasession;reload(mayasession);mayasession.MayaAssetSession().exportAssemblies(depth=10)" mode="python" option="False"></node>
+    	<node type="separator"></node>
+        <node type="command" name="Set Active Label" comment="Set Active Label" cmd="" mode="python" option="False"></node>
+    </node>
+
+    <node type="subMenu" name="Animation">
+        <node type="command" name="Publish Assembly Edits" comment="Publish Assembly Edits" cmd="import mayasession;reload(mayasession);mayasession.MayaShotSession().exportAssemblyEdits()" mode="python" option="False"></node>
+        <node type="command" name="Import Assembly Edits" comment="Import Assembly Edits" cmd="import mayasession;reload(mayasession);mayasession.MayaShotSession().importAssemblyEdits()" mode="python" option="False"></node>
+    </node>
+
+    <node type="subMenu" name="Utils">
+        <node type="command" name="Reload menu" comment="reload the Pipeline menu" cmd="import menu_pipeline;menu_pipeline.loadMenu()" mode="python" option="False"></node>
+    </node>
+</menu>
+
